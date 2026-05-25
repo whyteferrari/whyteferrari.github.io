@@ -46,6 +46,7 @@ body {
     font-family: 'Perandory', sans-serif;
     font-size: 90px;
     color: rgb(217, 217, 217);
+    -webkit-text-stroke: 0.8px black;
 }
 
 .bunny {
