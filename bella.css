@@ -1,55 +1,80 @@
 @font-face {
-        font-family: 'Perandory';
-        src: url('/fonts/Perandory-Regular.otf') format('opentype');
-    }
-
-body{
-        background-color: rgb(255, 255, 255);
-        margin: 0;
-
-        display: flex;
-        justify-content: center;  /* horizontal */
-        align-items: center;      /* vertical */
-
-        height: 100vh;            /* full screen height */
-        flex-direction: column;   /* stacks logo + other elements */
+    font-family: 'Perandory';
+    src: url('/fonts/Perandory-Regular.otf') format('opentype');
 }
+@font-face{
+    font-family: 'Drayton';
+    src: url('/fonts/ED-Drayton-Regular.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logo {
-        display: block;
-        margin: 50px auto 20px;
-        width: 300px;
-    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-.buttons{
-        display: flex;
-        justify-content: center;
+    width: 100%;
+    height: auto;
 
-    }
-
-.home-button {
-    background: transparent;
-        border: none;
-        cursor: pointer;
-
-        font-family: 'Perandory', sans-serif;
-
-        color: transparent;
-        -webkit-text-stroke: 0.8px rgb(0, 0, 0);
-
-        font-size: 50px;
-        font-weight: normal;
-        transition: 0.3s;
+    z-index: 1;
+    opacity: 0.8;
 }
 
-.home-button:hover {
-    color: rgb(0, 0, 0);
+.banner {
+    position: relative;
+    z-index: 2;
+
+    padding-bottom: 300px;
 }
 
-.COMING-SOON {
+.ready {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
+    font-family: 'Perandory', sans-serif;
+    font-size: 90px;
+}
+
+.bunny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Drayton', sans-serif;
+    font-size: 130px;
+    margin-top: -90px;
+    transform: rotate(-5deg);
+}
+
+.bunny::before {
+    content: "Bunny?";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: white;
+    margin-left: 54.3px;
+    text-shadow:
+        -1px -1px 0 rgba(255, 255, 255, 0.345),
+         0px -1px 0 rgba(255, 255, 255, 0.345),
+         1px -1px 0 rgba(255, 255, 255, 0.345),
+        -1px  0px 0 rgba(255, 255, 255, 0.345),
+         1px  0px 0 rgba(255, 255, 255, 0.345),
+        -1px  1px 0 rgba(255, 255, 255, 0.345),
+         0px  1px 0 rgba(255, 255, 255, 0.345),
+         1px  1px 0 rgba(255, 255, 255, 0.345);
 }
