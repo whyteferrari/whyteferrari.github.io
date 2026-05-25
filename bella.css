@@ -28,7 +28,6 @@ body {
     height: auto;
 
     z-index: 1;
-    opacity: 0.8;
 }
 
 .banner {
@@ -46,6 +45,7 @@ body {
 
     font-family: 'Perandory', sans-serif;
     font-size: 90px;
+    color: rgb(217, 217, 217);
 }
 
 .bunny {
@@ -58,6 +58,7 @@ body {
     font-size: 130px;
     margin-top: -90px;
     transform: rotate(-5deg);
+    color: rgb(217, 217, 217);
 }
 
 .bunny::before {
@@ -69,12 +70,12 @@ body {
     color: white;
     margin-left: 54.3px;
     text-shadow:
-        -1px -1px 0 rgba(255, 255, 255, 0.345),
-         0px -1px 0 rgba(255, 255, 255, 0.345),
-         1px -1px 0 rgba(255, 255, 255, 0.345),
-        -1px  0px 0 rgba(255, 255, 255, 0.345),
-         1px  0px 0 rgba(255, 255, 255, 0.345),
-        -1px  1px 0 rgba(255, 255, 255, 0.345),
-         0px  1px 0 rgba(255, 255, 255, 0.345),
-         1px  1px 0 rgba(255, 255, 255, 0.345);
+        -1px -1px 0 rgb(0, 0, 0),
+         0px -1px 0 rgb(0, 0, 0),
+         1px -1px 0 rgb(0, 0, 0),
+        -1px  0px 0 rgb(0, 0, 0),
+         1px  0px 0 rgb(0, 0, 0),
+        -1px  1px 0 rgb(0, 0, 0),
+         0px  1px 0 rgb(0, 0, 0),
+         1px  1px 0 rgb(0, 0, 0);
 }
