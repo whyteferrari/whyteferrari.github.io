@@ -1,0 +1,55 @@
+@font-face {
+        font-family: 'Ade';
+        src: url('/fonts/Ade-Display.otf') format('opentype');
+    }
+
+body{
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+
+        display: flex;
+        justify-content: center;  /* horizontal */
+        align-items: center;      /* vertical */
+
+        height: 100vh;            /* full screen height */
+        flex-direction: column;   /* stacks logo + other elements */
+}
+.logo {
+        display: block;
+        margin: 50px auto 20px;
+        width: 300px;
+    }
+
+.buttons{
+        display: flex;
+        justify-content: center;
+
+    }
+
+.home-button {
+    background: transparent;
+        border: none;
+        cursor: pointer;
+
+        font-family: 'Ade', sans-serif;
+
+        color: transparent;
+        -webkit-text-stroke: 0.8px rgb(0, 0, 0);
+
+        font-size: 50px;
+        font-weight: normal;
+        transition: 0.3s;
+}
+
+.home-button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.COMING-SOON {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
